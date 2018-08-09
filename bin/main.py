@@ -22,21 +22,21 @@ print("input file = " + f_sde.name)
 sde_lines = f_sde.readlines()
 
 for line in sde_lines:
-    opt = line.split()[0]
-    if opt in "a":
-        a = float(line.split()[1])
-        print("init1 : " + str(a))
-    elif opt in "b":
-        b = float(line.split()[1])
-        print("b : " + str(b))
-    elif opt in "c":
-        c = float(line.split()[1])
-        print("c : " + str(c))
-    elif opt in "d":
-        d = float(line.split()[1])
-        print("d : " + str(d))
-    else:
-        print("Inputdeck value read error. your input key is " + str(opt))
-        sys.exit(1)
+	opt  = line.split()[0]
+	if opt in "INT1":
+		int1 = int(line.split()[1])
+		print "init1 :" + str(int1)
+	elif opt in "REAL1":
+		real1 = float(line.split()[1])
+		print "real1 :" + str(real1)
+	elif opt in "LIST1":
+		list1 = line.split()[1]
+		print "list1 :" + list1
+	elif opt in "VECTOR1":
+		vector1 = map(int, line.split("[")[1].split(']')[0].split())
+		print "vector1 :" + str(vector1)
+	else:
+		print "SDE value read error. your input key is " + str(opt)
+		sys.exit(1)
 
 f_sde.close()

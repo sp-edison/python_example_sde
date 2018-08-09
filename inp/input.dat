@@ -1,4 +1,4 @@
-a 1.0
-b 2.0
-c 0.5
-d 2.3
+INT1 42
+REAL1 42.112
+LIST1 a
+VECTOR1 [ 1 0 0 ]
