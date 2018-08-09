@@ -4,8 +4,6 @@
 import sys
 import os
 import getopt
-import math
-import numpy as np
 
 
 try:
