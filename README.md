@@ -28,7 +28,7 @@ VECTOR1 [ 1 0 0 ]
 zip 파일을 다운로드 받아 압축을 풀거나 ```git clone``` 명령어를 이용하여, 프로젝트를 가져올 수 있습니다.
 
 ```bash
-$ git clone https://github.com/sp-edison/c_example_gnuplot.git
+$ git clone https://github.com/sp-edison/python_example_sde.git
 ```
 
 ```bash
